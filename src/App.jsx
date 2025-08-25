@@ -1,0 +1,30 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { NotFound } from "./pages/NotFound";
+import { Toaster } from "@/components/ui/toaster";
+import emailjs from "@emailjs/browser"
+import { useEffect, useState } from "react";
+
+function App() {
+
+  const[isloading, setIsloading] = useState(false);
+
+  useEffect(()=>{
+     setIsloading(true);
+     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+  },[])
+
+  return (
+    <>
+      <Toaster />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
+
+export default App;
