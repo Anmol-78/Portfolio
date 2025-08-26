@@ -3,7 +3,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Courseify Project",
+    title: "Courseify-LMS",
     description: "A modern learning management platform where users can create, manage, and enroll in courses with chapters and lectures.",
     image: "/projects/courseify.png",
     tags: ["React", "TailwindCSS", "NodeJs"],

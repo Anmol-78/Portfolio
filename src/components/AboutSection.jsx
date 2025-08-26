@@ -35,7 +35,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1sh8GIgnrT0YPS6P3DaSS8QwS2AdJLklD/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1taXn384GatUcZbUlCTtA-OwJrlNmz1xr/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
